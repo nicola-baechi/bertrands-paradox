@@ -1,4 +1,4 @@
-package RandomMidpoint.controller;
+package randomradialpoint.controller;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;

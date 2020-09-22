@@ -1,4 +1,4 @@
-package RandomEndpoint;
+package randommidpoint;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -10,7 +10,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("view/sample.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("RandomMidpoint/sample.fxml"));
         primaryStage.setTitle("Hello World");
         primaryStage.setScene(new Scene(root, 500, 550));
         primaryStage.show();

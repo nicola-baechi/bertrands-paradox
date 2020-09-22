@@ -1,4 +1,4 @@
-package RandomEndpoint.controller;
+package randomendpoint.controller;
 
 
 import javafx.fxml.FXML;

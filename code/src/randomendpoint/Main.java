@@ -1,4 +1,4 @@
-package RandomRadialPoint;
+package randomendpoint;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

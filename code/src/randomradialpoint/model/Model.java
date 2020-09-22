@@ -1,4 +1,4 @@
-package RandomRadialPoint.model;
+package randomradialpoint.model;
 
 /**
  * @author nicola.baechi

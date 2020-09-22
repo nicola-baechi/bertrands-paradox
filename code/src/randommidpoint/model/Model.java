@@ -1,4 +1,4 @@
-package RandomEndpoint.model;
+package randommidpoint.model;
 
 /**
  * @author nicola.baechi
