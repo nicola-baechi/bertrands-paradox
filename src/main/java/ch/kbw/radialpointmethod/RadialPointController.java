@@ -1,5 +1,9 @@
 package ch.kbw.radialpointmethod;
 
+import ch.kbw.radialpointmethod.model.CircleModel;
+import ch.kbw.radialpointmethod.model.CircumferencePointModel;
+import ch.kbw.radialpointmethod.model.RandomPointModel;
+import ch.kbw.radialpointmethod.model.TriangleModel;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -16,10 +20,6 @@ import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
-import ch.kbw.radialpointmethod.model.CircleModel;
-import ch.kbw.radialpointmethod.model.CircumferencePointModel;
-import ch.kbw.radialpointmethod.model.RandomPointModel;
-import ch.kbw.radialpointmethod.model.TriangleModel;
 
 import java.awt.geom.Point2D;
 import java.io.IOException;

@@ -21,6 +21,7 @@ public class CircleModel {
 
     /**
      * generate random Points
+     *
      * @param iterations amount of Points who should be generated
      * @return Returns ArrayList of Points
      */

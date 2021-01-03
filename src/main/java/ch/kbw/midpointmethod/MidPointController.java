@@ -1,5 +1,6 @@
 package ch.kbw.midpointmethod;
 
+import ch.kbw.midpointmethod.model.*;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -15,7 +16,6 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
-import ch.kbw.midpointmethod.model.*;
 
 import java.io.IOException;
 import java.net.URL;
@@ -51,7 +51,7 @@ public class MidPointController implements Initializable {
     }
 
     /**
-     *  starts the whole procedure
+     * starts the whole procedure
      */
 
     public void generateProject() {
@@ -86,6 +86,7 @@ public class MidPointController implements Initializable {
 
     /**
      * draws the triangle and circleModel onto the canvas
+     *
      * @param t is the Triangle
      */
     public void drawAllShapes(TriangleModel t) {
@@ -100,6 +101,7 @@ public class MidPointController implements Initializable {
 
     /**
      * generate Random Points
+     *
      * @param iterations The Amount of generated Points
      */
     public void generatePoints(int iterations) {
@@ -148,6 +150,7 @@ public class MidPointController implements Initializable {
 
     /**
      * Disables or Enables the Gui during the Animation
+     *
      * @param state true for enable GUI, false for disable GUI
      */
     public void disableGUI(boolean state) {
@@ -160,6 +163,7 @@ public class MidPointController implements Initializable {
 
     /**
      * Draws a Point
+     *
      * @param p Point which should get drawn on the canvas
      */
     public void drawPoint(Point p) {
