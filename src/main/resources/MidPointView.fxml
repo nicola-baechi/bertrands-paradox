@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="680.0" prefWidth="500.0" style="-fx-background-color: #8ACB88;"
+            xmlns="http://javafx.com/javafx/8" fx:controller="ch.kbw.midpointmethod.MidPointController">
+    <children>
+        <Canvas fx:id="canvas" focusTraversable="true" height="500.0"
+                style="visibility: true; fx-background-color: white;" width="500.0"/>
+        <HBox layoutX="19.0" layoutY="549.0" spacing="20.0">
+            <children>
+                <VBox layoutX="14.0" layoutY="547.0" prefWidth="320.0" spacing="5.0">
+                    <children>
+                        <Label text="Delay (in ms):" textFill="WHITE">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="15.0"/>
+                            </font>
+                            <VBox.margin>
+                                <Insets/>
+                            </VBox.margin>
+                        </Label>
+                        <TextField fx:id="delay" text="5">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="13.0"/>
+                            </font>
+                        </TextField>
+                        <Label text="Number of iterations:" textFill="WHITE">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="15.0"/>
+                            </font>
+                            <VBox.margin>
+                                <Insets top="10.0"/>
+                            </VBox.margin>
+                        </Label>
+                        <TextField fx:id="iterations" text="1000">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="13.0"/>
+                            </font>
+                        </TextField>
+                    </children>
+                </VBox>
+                <VBox alignment="BOTTOM_LEFT" layoutX="363.0" layoutY="606.0" spacing="6.0">
+                    <children>
+                        <Button fx:id="startbutton" mnemonicParsing="false" onAction="#generateProject"
+                                prefWidth="123.0" text="Start" textFill="#1cae39">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="13.0"/>
+                            </font>
+                        </Button>
+                        <Button fx:id="resetButton" layoutX="10.0" layoutY="63.0" mnemonicParsing="false"
+                                onAction="#resetCanvas" prefWidth="123.0" text="Reset all" textFill="#fc2f00">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="13.0"/>
+                            </font>
+                        </Button>
+                        <Button fx:id="menubutton" mnemonicParsing="false" onAction="#handleButtonMenu"
+                                prefWidth="123.0" text=" Back to Menu">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="13.0"/>
+                            </font>
+                        </Button>
+                    </children>
+                    <HBox.margin>
+                        <Insets bottom="-1.0"/>
+                    </HBox.margin>
+                </VBox>
+            </children>
+        </HBox>
+        <HBox layoutX="19.0" layoutY="500.0" spacing="5.0">
+            <children>
+                <Label text="Probability:" textFill="#fc2f00">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="probLabel" text="NaN" textFill="#fc2f00">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0"/>
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

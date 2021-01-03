@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity"
+            prefHeight="200.0" prefWidth="500.0" style="-fx-background-color: #2D2D2A;"
+            xmlns="http://javafx.com/javafx/8" fx:controller="ch.kbw.app.StartScreenController">
+    <children>
+        <HBox alignment="CENTER" layoutX="120.0" layoutY="101.0" spacing="10.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#handleButton50" text="1/2">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="13.0"/>
+                    </font>
+                    <padding>
+                        <Insets bottom="20.0" left="30.0" right="30.0" top="20.0"/>
+                    </padding>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#handleButton33" text="1/3">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="13.0"/>
+                    </font>
+                    <padding>
+                        <Insets bottom="20.0" left="30.0" right="30.0" top="20.0"/>
+                    </padding>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#handleButton25" text="1/4">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="13.0"/>
+                    </font>
+                    <padding>
+                        <Insets bottom="20.0" left="30.0" right="30.0" top="20.0"/>
+                    </padding>
+                </Button>
+            </children>
+        </HBox>
+        <Label layoutX="70.0" layoutY="24.0" text="Bertrands Paradox Simulation" textFill="WHITE">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="25.0"/>
+            </font>
+        </Label>
+        <Label layoutX="110.0" layoutY="66.0" text="Please choose one of the following methods:" textFill="WHITE">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="13.0"/>
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

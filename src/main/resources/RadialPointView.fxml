@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="750.0" prefWidth="500.0" style="-fx-background-color: #83A0BC;"
+            xmlns="http://javafx.com/javafx/8" fx:controller="ch.kbw.radialpointmethod.RadialPointController">
+    <children>
+        <Canvas fx:id="canvas" focusTraversable="true" height="500.0" style="visibility: true;" width="500.0"/>
+        <HBox layoutX="19.0" layoutY="553.0" spacing="20.0">
+            <children>
+                <VBox layoutX="14.0" layoutY="547.0" prefWidth="320.0" spacing="5.0">
+                    <children>
+                        <Label text="Delay (in ms):" textFill="WHITE">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="15.0"/>
+                            </font>
+                            <VBox.margin>
+                                <Insets/>
+                            </VBox.margin>
+                        </Label>
+                        <TextField fx:id="delay" text="5">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="13.0"/>
+                            </font>
+                        </TextField>
+                        <Label text="Number of iterations:" textFill="WHITE">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="15.0"/>
+                            </font>
+                            <VBox.margin>
+                                <Insets top="10.0"/>
+                            </VBox.margin>
+                        </Label>
+                        <TextField fx:id="iterations" text="1000">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="13.0"/>
+                            </font>
+                        </TextField>
+                        <Label text="Angle of radius:" textFill="WHITE">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="15.0"/>
+                            </font>
+                            <VBox.margin>
+                                <Insets top="10.0"/>
+                            </VBox.margin>
+                        </Label>
+                        <TextField fx:id="angle" disable="true" text="90">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="13.0"/>
+                            </font>
+                        </TextField>
+                    </children>
+                </VBox>
+                <VBox alignment="BOTTOM_LEFT" layoutX="363.0" layoutY="606.0" spacing="7.0">
+                    <children>
+                        <RadioButton fx:id="randomRad" mnemonicParsing="false" onAction="#radioButtonRandom"
+                                     selected="true" text="Random radius" textFill="WHITE">
+                            <toggleGroup>
+                                <ToggleGroup fx:id="radiusSelection"/>
+                            </toggleGroup>
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="14.0"/>
+                            </font>
+                            <VBox.margin>
+                                <Insets/>
+                            </VBox.margin>
+                        </RadioButton>
+                        <RadioButton fx:id="manualRad" mnemonicParsing="false" onAction="#radioButtonManual"
+                                     text="Manual radius" textFill="WHITE" toggleGroup="$radiusSelection">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="14.0"/>
+                            </font>
+                            <VBox.margin>
+                                <Insets bottom="7.0"/>
+                            </VBox.margin>
+                        </RadioButton>
+                        <Button fx:id="startbutton" mnemonicParsing="false" onAction="#handleButtonStart"
+                                prefWidth="123.0" text="Start" textFill="#1cae39">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="13.0"/>
+                            </font>
+                        </Button>
+                        <Button fx:id="resetbutton" layoutX="10.0" layoutY="129.0" mnemonicParsing="false"
+                                onAction="#handleButtonReset" prefWidth="123.0" text="Reset all" textFill="#fc2f00">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="13.0"/>
+                            </font>
+                        </Button>
+                        <Button fx:id="menubutton" mnemonicParsing="false" onAction="#handleButtonMenu"
+                                prefWidth="123.0" text=" Back to Menu">
+                            <font>
+                                <Font name="Arial Rounded MT Bold" size="13.0"/>
+                            </font>
+                        </Button>
+                    </children>
+                    <opaqueInsets>
+                        <Insets/>
+                    </opaqueInsets>
+                </VBox>
+            </children>
+        </HBox>
+        <HBox layoutX="19.0" layoutY="500.0" spacing="5.0">
+            <children>
+                <Label text="Probability:" textFill="#fc2f00">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="probLabel" text="NaN" textFill="#fc2f00">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0"/>
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>
