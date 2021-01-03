@@ -6,7 +6,7 @@ Developed by: @nicola-baechi @stefanshr @odthoma
 
 ## Running the program
 1. Download and extract the latest .zip archive from our releases
-2. On Windows, execute the start.bat script, on GNU/Linux or MacOS, execute the start.sh script
+2. On Windows, execute the start.exe
 
 No JRE or JDK installation is required, since it comes bundled with the program.
 
