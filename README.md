@@ -1,12 +1,14 @@
 # Bertrands Paradox Simulator
 A simple JavaFX 15 project attempting to simulate and visualize the Bertrands paradox.
 
-Developed by: @nicola-baechi @stefanshr @odthoma 
+Developed by: @nicola-baechi, @stefanshr, @odthoma 
 
 
 ## Running the program
-1. Download and extract the latest .zip archive from our releases
-2. On Windows, execute the start.exe
+Follow these steps to run the program:
+1. Download the latest .zip archive corresponding to your OS from the releases tab
+2. Extract the archive
+3. Execute the start script in the root of the folder
 
 No JRE or JDK installation is required, since it comes bundled with the program.
 
