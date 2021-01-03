@@ -4,7 +4,7 @@ A simple JavaFX 15 project attempting to simulate and visualize the Bertrands pa
 Developed by: @nicola-baechi @stefanshr @odthoma 
 
 ### Running the program
-1. Download and extract the .zip archive
+1. Download and extract the latest .zip archive from our releases
 2. On Windows, execute the start.bat script, on GNU/Linux or MacOS, execute the start.sh script
 
 No JRE or JDK installation is required, since it comes bundled with the program.
